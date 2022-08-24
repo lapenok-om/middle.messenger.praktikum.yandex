@@ -1,0 +1,18 @@
+---
+title: Вход
+titleCard: Вход
+---
+
+{{!< main}}
+
+<div class="login">
+    <form class="loginForm">
+      <div class="loginForm__title">
+        {{titleCard}}
+      </div>
+      {{> input classInput="field" nameInput="login" textLabel="Логин" typeInput="text" required=true}}
+      {{> input classInput="field" nameInput="password" textLabel="Пароль" typeInput="password" required=true}}
+      {{> button classButton="button" typeButton="submit" textButton="Войти"}}
+      {{> link hrefLink='signin.hbs' classLink="link" textLink="Нет аккаунта?" }}
+    </form>
+ </div>

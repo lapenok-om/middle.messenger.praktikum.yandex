@@ -1,0 +1,17 @@
+---
+title: Ошибка
+errorTitle: 404
+errorText: Не туда попали
+---
+
+{{!< main}}
+
+<div class="containerError">
+    <div class="containerError__title">
+        {{errorTitle}}
+    </div>
+    <div class="containerError__text">
+        {{errorText}}
+    </div>
+    {{> link hrefLink='menuChats.hbs' classLink="link" textLink="Назад к чатам" }}
+</div>
