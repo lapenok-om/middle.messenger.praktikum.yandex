@@ -1,0 +1,24 @@
+---
+title: Регистрация
+titleCard: Регистрация
+---
+
+{{!< main}}
+
+<div class='sigiin'>
+  <form class="sigiinForm">
+    <div class="sigiinForm__title">
+    {{titleCard}}
+    </div>
+    {{> input classInput="field" nameInput="email" textLabel="Почта" typeInput="email" required=true}}
+    {{> input classInput="field" nameInput="login" textLabel="Логин" typeInput="text" required=true}}
+    {{> input classInput="field" nameInput="first_name" textLabel="Имя" typeInput="text" required=true}}
+    {{> input classInput="field" nameInput="second_name" textLabel="Фамилия" typeInput="text" required=true}}
+    {{> input classInput="field" nameInput="phone" textLabel="Телефон" typeInput="tel" required=true}}
+    {{> input classInput="field" nameInput="password" textLabel="Пароль" typeInput="password" required=true}}
+    {{> input classInput="field" nameInput="passwordCheck" textLabel="Пароль еще раз" typeInput="password" required=true}}
+    {{> button classButton="button buttonSignin" typeButton="submit" textButton="Зарегистрироваться"}}
+    {{> link hrefLink='login.hbs' classLink="link" textLink="Войти" }}
+  </form>
+   
+</div>

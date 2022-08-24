@@ -1,0 +1,35 @@
+---
+title: Профиль
+name: Иван
+---
+
+{{!< main}}
+<div class="profile">
+  <div class="profileLeft">
+    <a href="menuChats.hbs" class="profileLeft__back"><img src="../images/back.svg" alt="back"/></a>
+  </div>
+
+  <div class="profileRight">
+    <div class="profile-container">
+      <a href="" class="profile-container__circle">{{> avatar }}</a>
+      <div class="profile-container__name">
+        {{name}}
+      </div>
+      <div class="profile-container__field">
+        {{#each mockData.fields}}
+        {{> input classInput="profileInput" }}
+        {{/each}}
+      </div>
+      <div class="profile-container__links">
+        <div class="line">
+          {{> link hrefLink="" classLink="linkProfile" textLink="Изменить данные" }}
+        </div>
+        <div class="line">
+          {{> link hrefLink="" classLink="linkProfile" textLink="Изменить пароль" }}
+        </div>
+       
+        {{> link hrefLink="login.hbs" classLink="linkProfile__red" textLink="Выйти" }}
+      </div>
+    </div>
+  </div>
+</div>
