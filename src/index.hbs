@@ -1,0 +1,24 @@
+---
+title: Menu
+---
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>{{title}}</title>
+</head>
+<body> 
+  <div class="main">
+    <ul>  
+      <li>{{> link hrefLink='./pages/signin.hbs' classLink="link" textLink="Регистрация"}}</li>  
+      <li>{{> link hrefLink='./pages/login.hbs' classLink="link" textLink="Вход"}}</li>
+      <li>{{> link hrefLink='./pages/menuChats.hbs' classLink="link" textLink="Чаты"}}</li>
+      <li>{{> link hrefLink='./pages/profile.hbs' classLink="link" textLink="Настройки профиля"}}</li>
+      <li>{{> link hrefLink='./pages/404.hbs' classLink="link" textLink="404"}}</li>
+      <li>{{> link hrefLink='./pages/500.hbs' classLink="link" textLink="500"}}</li>
+    </ul>
+  </div>
+</body>
+</html>

@@ -1,0 +1,29 @@
+---
+title: Web-мессенджер
+---
+
+{{!< main}}
+<div class="chatsContainers">
+  <div class="chatsLeftContainer">
+  <div class="chatsLeftContainer__link">
+    {{> link hrefLink='profile.hbs' classLink="linkChat" textLink="Профиль >" }}
+  </div>
+  <div class="chatsLeftContainer__search">
+    <input class="searchInput" type="text" placeholder="Поиск">
+  </div>
+  <div class="chatsLeftContainer__chatList">
+    <ul>
+      {{#each mockData.chats}}
+        {{> chatItem}}
+      {{/each}}
+    </ul>
+  </div>
+</div>
+<div class="chatsRightContainer">
+  <div class="chatsRightContainer__empty">
+    <span>Выберите чат чтобы отправить сообщение</span>
+  </div>
+</div>
+
+</div>
+

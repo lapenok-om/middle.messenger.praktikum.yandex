@@ -1,0 +1,77 @@
+{
+  "fields":[ 
+    {
+      "nameInput": "email",
+      "textLabel":"Почта",
+      "typeInput": "text",
+      "value": "pochta@yandex.ru",
+      "readonly": "true"
+    },
+    {
+      "nameInput": "login",
+      "textLabel":"Логин",
+      "typeInput": "text",
+      "value": "ivanivanov",
+      "readonly": "true"
+    },
+    {
+      "nameInput": "first_name",
+      "textLabel":"Имя",
+      "typeInput": "text",
+      "value": "Иван",
+      "readonly": "true"
+    },
+    {
+      "nameInput": "second_name",
+      "textLabel":"Фамилия",
+      "typeInput": "text",
+      "value": "Иванов",
+      "readonly": "true"    
+    },
+    {
+      "nameInput": "chat-name",
+      "textLabel":"Имя в Чате",
+      "typeInput": "text",
+      "value": "Иван",
+      "readonly": "true"
+    },
+    {
+      "nameInput": "phone",
+      "textLabel":"Телефон",
+      "typeInput": "text",
+      "value": "+7(909)-967-30-30",
+      "readonly": "true"
+    }
+  ],
+  "chats": [
+    {
+      "name":"Olga",
+      "lastMessage": "Hello",
+      "timeLastMessage": "10:56",
+      "countNotRead": "1"
+
+    },
+    {
+      "name":"Petya",
+      "lastMessage": "Давно не виделись",
+      "timeLastMessage": "7:30",
+      "countNotRead": "2"
+
+    },
+    {
+      "name":"Ivan",
+      "lastMessage": "Как дела?",
+      "timeLastMessage": "вт",
+      "countNotRead": "3"
+
+    },
+    {
+      "name":"Igor",
+      "lastMessage": "Привет!",
+      "timeLastMessage": "сб",
+      "countNotRead": "2"
+
+    }
+
+  ]
+}
